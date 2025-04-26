@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-top{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between; 
+    animation: fadeout 2s ease-in-out;
+   
+}
+.social-link i img {
+    margin-left: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color:#c93864;
+    border-radius: 50px;
+
+}
+@media screen and (max-width:400px){
+    .social-link i img {
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.content h1 {
+    animation: fadeout 2s ease-in-out;
+}
+@keyframes fadeout {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nav{
+    background-color: #ffdb85;
+}
+
+.nav-link{
+    margin-left: 180px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.about-content{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title{
+    justify-content: center;
+    display: flex;
+}
+.service-content{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: auto;
+    padding: 1em;
+    gap: 1em;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50% 0;
+}
+.service-content .card{
+    border: none;
+    min-width:20em;
+    height: 20em;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center; 
+}
+.service-content::-webkit-scrollbar{
+    width: 0;
+}
+.menu-content{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    border-radius: 20px;
+    overflow-x: auto;
+    padding: 1em;
+    gap: 1em;
+    scroll-snap-type: x mandatory; 
+    scroll-padding: 50% 0; 
+}
+
+.menu-content .card{
+    border: none;
+    min-width: 20em;
+    height: 30em;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center; 
+}
+.menu-content::-webkit-scrollbar{
+    width: 0;
+}
+
+.card{
+    width: 20em;
+    height: 30em;
+}
+.card-text {
+    text-align: justify;
+}
+.card-link{
+    text-align: center;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.card .card-img-top{
+    overflow: hidden;
+    object-fit: cover;
+    max-height: 15em;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+.card-body .btn{
+    margin-top: auto;
+}
+.dailyoffer-content{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: auto;
+    padding: 1em;
+    gap: 1em;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50% 0;
+}
+.dailyoffer-content .card{
+    border: none;
+    min-width:20em;
+    height: 20em;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center; 
+}
